@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDD</title>
+</head>
+<body>
+    <h1>Descubra seu páis pelo o seu DDD</h1>
+    Seu DDD: <input type="text" id="txtddd">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function calcular() {
+            var txtd = window.document.getElementById('txtddd')
+            var res =  window.document.getElementById('res')
+            var dd = Number(txtd.value)
+            res.innerHTML = `O seu ddd é ${dd}`
+            if (dd == 55) {
+                res.innerHTML = `<p> Você mora no Brasil<p>`
+            }  else if (dd == 54) {
+                res.innerHTML = `<p> Você mora na Argentina<p>`
+            } else {
+                res.innerHTML = `<p> Você mora em outro país da América do Sul`
+            }
+        }
+    </script>
+</body>
+</html>
