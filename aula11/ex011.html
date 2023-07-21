@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Páis</title>
+    <title>País</title>
 </head>
 <body>
-    <h1>Qual p</h1>
+    <h1>De qual país você é?</h1>
+    Seu País <input type="text" id="txtp">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var p = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            var pais = p
+            res.innerHTML = (`<p>Vivendo em ${pais}<p>`)
+            if (pais == 'Brasil') {
+                res.innerHTML = ('<p>Você é Brasileiro<p>')
+            } else {
+                res.innerHTML = ('<p>Você é Estrangeiro!<p>')
+            }
+            
+        }
+    </script>
 </body>
 </html>
