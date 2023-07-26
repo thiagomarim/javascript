@@ -8,7 +8,7 @@ if (idade < 16) {
         console.log('Voto obrigatório')
     }*/
 
-var ddd = 52
+var ddd = 55
 console.log(`O seu ddd é ${ddd}`)   
 if (ddd == 55) {
     console.log ('Você mora no Brasil')
