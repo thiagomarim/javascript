@@ -6,17 +6,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Exercício</title>
 </head>
-<body onload="carregar()">
+<body>
     <div class="main">
         <div>
-            <h1>Hora do dia</h1>
+            <h1>Tabuada</h1>
         </div>
         <div class="card-box">
-            <div id="msg">
-                Aqui vai aparecer a Mensagem....
+            <div id="num">
+               <p>Número: <input type="number" name="num" id="txtn">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
             </div>
-            <div id="foto">
-                
+            <div>
+                <select name="tabuada" id="seltab" size="10">
+                    <option>Digite um número acima</option>
+                </select>
             </div>
         </div>
     </div>
